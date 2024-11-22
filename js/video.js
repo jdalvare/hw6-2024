@@ -9,7 +9,7 @@ window.addEventListener("load", function() {
 	console.log("loop is set to " + video.loop);
 
 });
-// play button
+
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	video.play();
@@ -74,7 +74,7 @@ document.querySelector("#pause").addEventListener("click", function() {
         video.classList.remove('oldSchool');
     });
 
-    // update volume information
+    // update volume
     function updateVolumeInfo() {
         document.getElementById('volume').textContent = `${Math.round(video.volume * 100)}%`;
     }
